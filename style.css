@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 45px);
+    grid-template-rows: repeat(6, 45px);
+    justify-content: center;
+    margin: 20px auto;
+    width: 270px;
+    height: 270px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.line {
+    background-color: lightgray;
+    position: absolute;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.line:hover {
+    background-color: gray;
+}
+
+.horizontal {
+    width: 40px;
+    height: 5px;
+}
+
+.vertical {
+    width: 5px;
+    height: 40px;
+}
+
+.box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    transition: background 0.3s;
+}
+
+.box.p1 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.box.p2 {
+    background-color: rgba(0, 0, 255, 0.5);
+}
